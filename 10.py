@@ -41,6 +41,7 @@ class Library:
         if book not in self.books:
             self.books.append(book)
             self.authors.add(author)
+            self.books_amount += 1
 
     def group_by_author(self, author: Author):
         return [book.name for book in self.books if book.author.name == author.name]
