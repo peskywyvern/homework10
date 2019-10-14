@@ -34,7 +34,7 @@ class Library:
         self.name = name
         self.books = []
         self.authors = set()
-        self.books_amount = len(self.books)
+        self.books_amount = 0
 
     def new_book(self, name: str, year: int, author: Author, b_type: str):
         book = Book(name, year, author, b_type)
